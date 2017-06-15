@@ -19,12 +19,13 @@ body {
     top:0px;
     height:10%;
     padding-top: 15px;
+    padding-right: 15px;
 
 }
 
-.pull_left{
-   margin:0px;
-    padding: 0px;
+.pull_right {
+   margin:0;
+    padding: 0;
     display: block;
     float: right;
     
@@ -35,7 +36,7 @@ body {
 .gmail li {
     display: inline;
     list-style-type: none;
-    padding: 4px;
+    padding: 0 8px;
 }
 
 .gmail ul li a {
@@ -44,20 +45,19 @@ body {
 }
 
 .gmail ul li a img {
-    size: 1px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-bottom: -5px;
+    padding: 0 4px;
+    margin-bottom: -10px;
+    
 }
 
 .gmail ul li a:hover {
     text-decoration: underline;
 }
 
-.gmail img {
-    margin-bottom: -5px;
-    padding: 0 4px;
-    width: 30px;
-    height: 30px;
-    margin-bottom: -10px;
-}
 
 .content {
     position: relative;
@@ -66,92 +66,59 @@ body {
     height:80%;
     top:10%;
     margin: auto;
-    max-width: 500px;
-    
-}
-
-
-.content .logo {
-  text-align: center
-}
-.content .logo img{
-    display:inline-block;
-    height:50px;
-    width:200px;
-   
-}
-
-form{
-border:1px solid blue;
- 
-}
- .search_box {
- border:1px solid red;
- 
- 
-
- }
- .search_box input{
-   display: inline-block;
-   
-   width:90%;
-   height:100%;
-
- }
- .search_box input:hover{
-     border: 0px;
- }
-  form .search_box img {
-    display:inline-block;
-    width:20px;
-    height:35px;
-    
-}
-.feeling_lucky{
-    border: 1px solid yellow;
+    max-width: 550px;
     text-align: center;
 }
-.feeling_lucky .buttons{
-     display: inline-block;
+
+.content .logo img {
+    display:inline-block;
+    height:92px;
+    width:292px; 
+    margin: 80px 0;
+}
+
+
+.search_box input {
+    display: inline-block;
+    height: 43px;
+    width: 600px;
+    margin-bottom: 20px;
+    padding: 5px;
+ }
+
+ .search_box input:hover {
+     border: 1px solid lightblue;
+     box-shadow: 0 0.2px 0.2px 0;
+ }
+
+
+.feeling_lucky button {
+    display: inline-block;
 	background-color: #f5f5f5;
-	background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
-	background-image: -moz-linear-gradient(top,#f5f5f5,#f1f1f1);
-	background-image: -ms-linear-gradient(top,#f5f5f5,#f1f1f1);
-	background-image: -o-linear-gradient(top,#f5f5f5,#f1f1f1);
-	background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
-	color: #444;
-	
+	color: lightgrey;
 	border: 1px solid #dcdcdc;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
 	border-radius: 2px;
-	
 	cursor: default;
-	font-size: 11px;
-	font-weight: bold;
+	font-size: 16px;
+	font-weight: 50px;
 	text-align: center;
-	height: 27px;
+	height: 40px;
 	line-height: 27px;
-	min-width: 54px;
-	padding: 0 8px;
+	min-width: 100px;
+	padding: 0 35px;
 	text-decoration: none;
 }
 
-.buttons:hover {
+.feeling_lucky .buttons:hover {
 	background-color: #F8F8F8;
-	background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
-	background-image: -moz-linear-gradient(top,#f8f8f8,#f1f1f1);
-	background-image: -ms-linear-gradient(top,#f8f8f8,#f1f1f1);
-	background-image: -o-linear-gradient(top,#f8f8f8,#f1f1f1);
-	background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
-	
 	border: 1px solid #C6C6C6;
 	color: #333;
-	
-	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,.1);
-	-moz-box-shadow: 0px 1px 1px rgba(0,0,0,.1);
+	border: 1px solid #C6C6C6;
+	color: #333;
 	box-shadow: 0px 1px 1px rgba(0,0,0,.1);
 }
+
+
 .footer{
     position: fixed;
     bottom: 0px;
@@ -171,6 +138,21 @@ border:1px solid blue;
 
 .left{
     float: left;
+}
+
+.footer .right ,
+footer .left   {
+  padding-right: 27px;
+}
+ .right  a,
+.left   a {
+  text-decoration: none;
+  color: grey;
+  margin-right: 5px;
+}
+.footer .right  a:hover,
+.footer  .left   a:hover {
+  text-decoration: underline;
 }
 
 #footer li {
@@ -193,3 +175,4 @@ li a:hover {
 p:hover {
   text-decoration: underline;
 }
+
